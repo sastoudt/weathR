@@ -34,11 +34,11 @@ shinyServer(function(input, output) {
   #http://stackoverflow.com/questions/8434019/column-names-have-periods-inserted-where-there-should-be-spaces
   #summary<-read.csv("summary combined FINAL.csv",check.names=FALSE)
  #  summary<-read.csv("http://www.dropbox.com/s/c2311bb5nx18ypr/summary%20combined%20FINAL.csv",check.names=FALSE)
-x <- getURL("http://raw.github.com/sastoudt/weathR/summaryCombinedFinal.csv")
+x <- getURL("http://raw.github.com/sastoudt/weathR/master/summaryCombinedFinal.csv")
 summary <- read.csv(text = x)
  # summaryLocation<-read.csv("for map combined FINAL.csv",check.names=FALSE)
  # summaryLocation<-read.csv("http://www.dropbox.com/s/ub4hmbcac9tesbh/for%20map%20combined%20FINAL.csv",check.names=FALSE)
-  x <- getURL("http://raw.github.com/sastoudt/weathR/forMapCombinedFinal.csv")
+  x <- getURL("http://raw.github.com/sastoudt/weathR/master/forMapCombinedFinal.csv")
 summaryLocation<- read.csv(text = x)
   #z<-apply(summary[,1:34],1,which.max) 
   #http://r.789695.n4.nabble.com/finding-max-value-in-a-row-and-reporting-colum-name-td2309358.html
@@ -46,7 +46,7 @@ summaryLocation<- read.csv(text = x)
   #full<-read.csv("full tweets combined FINAL.csv",check.names=FALSE)
    #full<-read.csv("http://www.dropbox.com/s/5ycwa4jksrowsol/full%20tweets%20combined%20FINAL.csv",check.names=FALSE)
 
-x <- getURL("https://raw.github.com/sstoudt/weathR/fullTweetsCombinedFinal.csv")
+x <- getURL("https://raw.github.com/sstoudt/weathR/master/fullTweetsCombinedFinal.csv")
 full<- read.csv(text = x)
 
 full$text<-clean.text(full$text)
