@@ -32,12 +32,17 @@ shinyServer(function(input, output) {
   #load data read csv
   #setwd("~/Desktop/SHINY")
   #http://stackoverflow.com/questions/8434019/column-names-have-periods-inserted-where-there-should-be-spaces
-  summary<-read.csv("summary combined FINAL.csv",check.names=FALSE)
-  summaryLocation<-read.csv("for map combined FINAL.csv",check.names=FALSE)
+  #summary<-read.csv("summary combined FINAL.csv",check.names=FALSE)
+   summary<-read.csv(http://www.dropbox.com/s/c2311bb5nx18ypr/summary%20combined%20FINAL.csv,check.names=FALSE)
+
+ # summaryLocation<-read.csv("for map combined FINAL.csv",check.names=FALSE)
+  summaryLocation<-read.csv(http://www.dropbox.com/s/ub4hmbcac9tesbh/for%20map%20combined%20FINAL.csv,check.names=FALSE)
   #z<-apply(summary[,1:34],1,which.max) 
   #http://r.789695.n4.nabble.com/finding-max-value-in-a-row-and-reporting-colum-name-td2309358.html
   #summary[,35]=names(summary)[z] 
-  full<-read.csv("full tweets combined FINAL.csv",check.names=FALSE)
+  #full<-read.csv("full tweets combined FINAL.csv",check.names=FALSE)
+   full<-read.csv(http://www.dropbox.com/s/5ycwa4jksrowsol/full%20tweets%20combined%20FINAL.csv,check.names=FALSE)
+
 full$text<-clean.text(full$text)
   
  
