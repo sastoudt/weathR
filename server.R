@@ -30,7 +30,7 @@ shinyServer(function(input, output) {
     return(x)
   }
   #load data read csv
-  setwd("~/Desktop/SHINY")
+  #setwd("~/Desktop/SHINY")
   #http://stackoverflow.com/questions/8434019/column-names-have-periods-inserted-where-there-should-be-spaces
   summary<-read.csv("summary combined FINAL.csv",check.names=FALSE)
   summaryLocation<-read.csv("for map combined FINAL.csv",check.names=FALSE)
