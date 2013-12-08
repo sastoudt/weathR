@@ -5,6 +5,7 @@ library(shiny)
 shinyServer(function(input, output) {
   require(maps)
   require(googleVis)
+  require(RCurl)
   #http://lists.hexdump.org/pipermail/twitter-users-hexdump.org/2013-May/000335.html
   clean.text = function(x)
   {
