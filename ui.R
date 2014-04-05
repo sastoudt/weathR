@@ -4,7 +4,7 @@ library(shiny)
 shinyUI(pageWithSidebar(
   
   # Application title
-  headerPanel("WeatheR"),
+  headerPanel("WeathR"),
   
   sidebarPanel(
     
